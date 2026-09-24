@@ -1,0 +1,27 @@
+{
+  "required_files": [
+    "README.md",
+    "pyproject.toml",
+    "docs/validation.txt",
+    "scripts/run_validation.py",
+    "tests/test_auditor.py",
+    "tests/xlsx_factory.py",
+    ".github/workflows/ci.yml",
+    "samples/config.json",
+    "samples/issue_rich.xlsx",
+    "samples/clean.xlsx",
+    "samples/quoted_refs.xlsx"
+  ],
+  "expected_sha256": {},
+  "test_command": ["python", "scripts/run_validation.py"],
+  "test_timeout_seconds": 120,
+  "secret_scan": true,
+  "claim_rules": [
+    {
+      "claim_file": "README.md",
+      "claim_regex": "passes \\*\\*(\\d+)/5 tests\\*\\*",
+      "evidence_file": "docs/validation.txt",
+      "evidence_regex": "Ran (\\d+) tests"
+    }
+  ]
+}
