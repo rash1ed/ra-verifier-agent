@@ -1,0 +1,4 @@
+=== VERIFIER TESTS ===
+........                                                                 [100%]
+8 passed in 0.75s
+EXIT_CODE=0

@@ -1,0 +1,18 @@
+RA Verifier Agent v0.1 — Excel Assurance Engine Verification
+
+Result: PASS
+
+Checks:
+- required_files: PASS — 11 required files present
+- sha256: PASS — mechanism available; 0 fixed hashes required by current criteria
+- tests: PASS — python scripts/run_validation.py returned exit code 0
+- secret_scan: PASS — no secret patterns found
+- claim_evidence: PASS — README test-count claim matched docs/validation.txt
+
+Verifier self-test status:
+- 8 / 8 tests passing
+
+Important scope:
+- This is a sanitized public evidence summary.
+- The verifier does not modify the source artifact.
+- External URL verification is outside v0.1.
